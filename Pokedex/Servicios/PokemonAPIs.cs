@@ -27,5 +27,15 @@ namespace Pokedex.Servicios
         }
 
 
+        public async Task<CaracteristicasPokemon> DevuelveCaracteristicasPokemon(string url) {
+
+            string json = await _httpClient.GetStringAsync(url);
+            CaracteristicasPokemon caracteristicas= JsonConvert.DeserializeObject<CaracteristicasPokemon>(json);
+
+            return caracteristicas;
+
+        }
+
+
     }
 }

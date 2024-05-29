@@ -20,4 +20,11 @@ public partial class ListadoPokemon : ContentPage
 		PokemonList.ItemsSource = listado_pokemones;
 
 	}
+	public void MuestraResumenPokemon(object sender,SelectedItemChangedEventArgs e) {
+		
+
+		PokemonInfo poke_
+		Navigation.PushAsync(new ResumenPokemon());
+	
+	}
 }
