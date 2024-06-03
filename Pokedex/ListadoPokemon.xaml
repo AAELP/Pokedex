@@ -5,7 +5,7 @@
              Title="ListadoPokemon">
 
     <ScrollView >
-        <ListView x:Name ="PokemonList" ItemsSource="{Binding listado_pokemones}">
+        <ListView x:Name ="PokemonList" ItemsSource="{Binding listado_pokemones}"ItemSelected="MuestraResumenPokemon">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>

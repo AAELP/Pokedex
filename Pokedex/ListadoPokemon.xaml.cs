@@ -22,9 +22,9 @@ public partial class ListadoPokemon : ContentPage
 	}
 	public void MuestraResumenPokemon(object sender,SelectedItemChangedEventArgs e) {
 		
+		PokemonInfo poke_info = (PokemonInfo)e.SelectedItem;
 
-		PokemonInfo poke_
-		Navigation.PushAsync(new ResumenPokemon());
+        Navigation.PushAsync(new ResumenPokemon(poke_info.url));
 	
 	}
 }
